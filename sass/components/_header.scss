@@ -7,11 +7,11 @@
     }
 
     @include respond-to(tablet) {
+      align-items: center;
+      justify-content: flex-start;
     }
 
     @include respond-to(desktop) {
-      align-items: center;
-      justify-content: flex-start;
     }
   }
 }

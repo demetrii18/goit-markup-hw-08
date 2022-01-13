@@ -53,13 +53,13 @@
   }
 
   @include respond-to(tablet) {
-    display: none;
+    display: flex;
+    flex-direction: column;
   }
 
   @include respond-to(desktop) {
-    display: flex;
+    flex-direction: row;
     margin-left: auto;
     align-items: center;
-    padding-left: 0;
   }
 }

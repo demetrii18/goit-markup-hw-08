@@ -1,13 +1,15 @@
 .container {
   @include respond-to(mobile) {
-    max-width: 100%;
+    width: 480px;
+    margin: 0 auto;
   }
 
   @include respond-to(tablet) {
+    width: 768px;
   }
 
   @include respond-to(desktop) {
-    margin: 0 auto;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
   }
