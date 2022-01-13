@@ -1,7 +1,4 @@
 .site-nav {
-  display: flex;
-  margin-left: 93px;
-
   &__item {
     position: relative;
 
@@ -43,5 +40,18 @@
         border-radius: 2px;
       }
     }
+  }
+
+  @include respond-to(mobile) {
+    display: none;
+  }
+
+  @include respond-to(tablet) {
+    display: none;
+  }
+
+  @include respond-to(desktop) {
+    display: flex;
+    margin-left: 93px;
   }
 }
