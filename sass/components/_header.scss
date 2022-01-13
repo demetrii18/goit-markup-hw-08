@@ -2,8 +2,16 @@
   border-bottom: 1px solid $primary-border-color;
 
   & .container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    @include respond-to(mobile) {
+      display: flex;
+    }
+
+    @include respond-to(tablet) {
+    }
+
+    @include respond-to(desktop) {
+      align-items: center;
+      justify-content: flex-start;
+    }
   }
 }

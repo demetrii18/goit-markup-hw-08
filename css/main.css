@@ -25,21 +25,14 @@ ul {
   list-style: none;
 }
 
-@media screen and (min-width: 479px) {
+@media screen and (min-width: 319px) {
   .container {
-    min-width: 480px;
-  }
-}
-
-@media screen and (min-width: 767px) {
-  .container {
-    min-width: 768px;
+    max-width: 100%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    min-width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -118,16 +111,23 @@ ul {
   border-bottom: 1px solid #ececec;
 }
 
-.header .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+@media screen and (min-width: 319px) {
+  .header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 .logo__accent {
@@ -172,7 +172,7 @@ ul {
   border-radius: 2px;
 }
 
-@media screen and (min-width: 479px) {
+@media screen and (min-width: 319px) {
   .site-nav {
     display: none;
   }
@@ -244,7 +244,7 @@ ul {
   height: 16px;
 }
 
-@media screen and (min-width: 479px) {
+@media screen and (min-width: 319px) {
   .contact-nav {
     display: none;
   }
