@@ -1,0 +1,55 @@
+.contact-nav {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  padding-left: 0;
+
+  &__item:last-child {
+    margin-left: 50px;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    color: $primary-text-color;
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition: color $animation-style;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+
+    &:hover .contact-nav__icon--mail,
+    &:focus .contact-nav__icon--mail {
+      fill: $accent-color;
+    }
+
+    &:hover .contact-nav__icon--tel,
+    &:focus .contact-nav__icon--tel {
+      fill: $accent-color;
+    }
+  }
+
+  &__icon {
+    margin-right: 10px;
+    fill: $primary-text-color;
+
+    transition: fill $animation-style;
+
+    &--mail {
+      width: 16px;
+      height: 12px;
+    }
+
+    &--tel {
+      width: 10px;
+      height: 16px;
+    }
+  }
+}

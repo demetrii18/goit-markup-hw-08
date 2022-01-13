@@ -1,0 +1,81 @@
+.client-list {
+  display: flex;
+  justify-content: center;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__link {
+    display: block;
+    width: 170px;
+    height: 92px;
+    border: 1px solid;
+    color: $primary-icon-color;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    transition: color $animation-style;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+
+    &:hover .client-list__icon--corp1,
+    &:focus .client-list__icon--corp1,
+    &:hover .client-list__icon--corp2,
+    &:focus .client-list__icon--corp2,
+    &:hover .client-list__icon--corp3,
+    &:focus .client-list__icon--corp3,
+    &:hover .client-list__icon--corp4,
+    &:focus .client-list__icon--corp4,
+    &:hover .client-list__icon--corp5,
+    &:focus .client-list__icon--corp5,
+    &:hover .client-list__icon--corp6,
+    &:focus .client-list__icon--corp6 {
+      fill: $accent-color;
+    }
+  }
+
+  &__icon {
+    fill: rgba(175, 177, 184, 1);
+    transition: fill $animation-style;
+
+    &--corp1 {
+      width: 41px;
+      height: 46.7px;
+      margin: 23px 65px;
+    }
+
+    &--corp2 {
+      width: 40px;
+      height: 52px;
+      margin: 20px 65px;
+    }
+
+    &--corp3 {
+      width: 43px;
+      height: 41px;
+      margin: 25px 63px;
+    }
+
+    &--corp4 {
+      width: 84px;
+      height: 40px;
+      margin: 25px 43px;
+    }
+
+    &--corp5 {
+      width: 62px;
+      height: 45px;
+      margin: 23px 54px;
+    }
+
+    &--corp6 {
+      width: 94px;
+      height: 44px;
+      margin: 24px 38px;
+    }
+  }
+}

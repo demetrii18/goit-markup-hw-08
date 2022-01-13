@@ -1,0 +1,75 @@
+.subscribe {
+  display: flex;
+  flex-direction: column;
+
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  color: $primary-white-color;
+
+  padding-top: 72px;
+  padding-left: 93px;
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__field {
+    display: inline-flex;
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+
+      display: flex;
+      align-items: center;
+
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  &__label + &__button {
+    margin-left: 12px;
+  }
+
+  &__input {
+    width: 358px;
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: transparent;
+    color: $primary-white-color;
+    outline: none;
+
+    &:focus {
+      border-color: $accent-color;
+      transition: border-color $animation-style;
+    }
+  }
+
+  &__button:hover &__icon,
+  &__button:focus &__icon {
+    fill: $accent-color;
+  }
+
+  &__button--text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill: $primary-white-color;
+    margin-left: 10px;
+
+    transition: fill $animation-style;
+  }
+}

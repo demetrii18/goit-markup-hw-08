@@ -1,0 +1,27 @@
+body {
+  margin: auto;
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+
+  font-family: $main-ff;
+  font-size: $main-fz;
+  font-weight: $main-fw;
+  letter-spacing: $main-ls;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}

@@ -1,0 +1,40 @@
+.agree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  &__text {
+    line-height: 1.71;
+    color: $primary-text-color;
+  }
+
+  &__icon {
+    display: inline-flex;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $title-text-color;
+    border-radius: 2px;
+    cursor: pointer;
+
+    & + .agree__text {
+      margin-left: 7px;
+    }
+  }
+
+  &__input {
+    appearance: none;
+
+    &:checked + .agree__icon {
+      border-color: $accent-color;
+      background-color: $accent-color;
+      background-image: url('../images/check.svg#check-icon');
+      background-size: contain;
+      background-origin: border-box;
+    }
+  }
+
+  &__link {
+    color: $accent-color;
+  }
+}

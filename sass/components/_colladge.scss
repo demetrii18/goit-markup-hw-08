@@ -1,0 +1,39 @@
+.colladge {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+
+  &__link {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    background-size: contain;
+    border-radius: 50%;
+    background-color: $primary-white-color;
+
+    transition: background-color $animation-style;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+
+    &:hover .colladge__icon,
+    &:focus .colladge__icon {
+      fill: $primary-white-color;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    margin: 12px;
+    fill: rgba(175, 177, 184, 1);
+
+    transition: fill $animation-style;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,12 @@
+.join-us {
+  padding: 72px 0 100px 78px;
+
+  &__title {
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: $primary-white-color;
+    margin-bottom: 20px;
+  }
+}

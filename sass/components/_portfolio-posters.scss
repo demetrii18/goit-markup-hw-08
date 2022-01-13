@@ -1,0 +1,59 @@
+.project__link {
+  position: relative;
+  text-decoration: none;
+
+  color: $primary-text-color;
+  background: $primary-white-color;
+
+  display: inline-flex;
+  flex-direction: column;
+  width: 370px;
+
+  &:hover .poster::before,
+  &:hover .poster__text,
+  &:focus .poster::before,
+  &:focus .poster__text {
+    transform: translateY(0);
+  }
+}
+
+.poster {
+  position: relative;
+  overflow: hidden;
+
+  display: inline-flex;
+
+  &::before {
+    content: '';
+
+    display: inline-flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    background: rgba(33, 150, 243, 0.9);
+
+    transform: translateY(calc(100% + 1px));
+    transition: transform $animation-style;
+  }
+
+  &__text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    padding: 63px 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+
+    color: $primary-white-color;
+
+    transform: translateY(100%);
+    transition: transform $animation-style;
+  }
+}

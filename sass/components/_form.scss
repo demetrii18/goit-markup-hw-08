@@ -1,0 +1,13 @@
+.form {
+  padding: 40px 39px 40px 41px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+
+    color: $title-text-color;
+    margin-bottom: 12px;
+  }
+}
