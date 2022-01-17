@@ -87,4 +87,18 @@
   &--portfolio {
     margin-bottom: 0;
   }
+
+  &--hide {
+    @include respond-to(mobile) {
+      display: none;
+    }
+
+    @include respond-to(tablet) {
+      display: none;
+    }
+
+    @include respond-to(desktop) {
+      display: flex;
+    }
+  }
 }

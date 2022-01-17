@@ -1,13 +1,36 @@
 .features {
-  display: flex;
-  width: calc((100% - 90px) / 4);
-  color: $primary-text-color;
+  @include respond-to(mobile) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include respond-to(tablet) {
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  @include respond-to(desktop) {
+    flex-direction: row;
+    width: calc((100% - 90px) / 4);
+    color: $primary-text-color;
+  }
 
   &__item {
-    min-width: 270px;
+    @include respond-to(mobile) {
+      display: flex;
+    }
 
-    &:not(:last-child) {
-      margin-right: 30px;
+    @include respond-to(tablet) {
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    @include respond-to(desktop) {
+      min-width: 270px;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
     }
   }
 
@@ -23,16 +46,40 @@
   }
 
   &__wrap {
-    display: inline-flex;
-    width: 270px;
-    background: $primary-button-bg-color;
-    border-radius: 4px;
-    margin-bottom: 30px;
+    @include respond-to(mobile) {
+      display: flex;
+      flex-direction: column;
+      background: $primary-button-bg-color;
+      border-radius: 4px;
+      margin-bottom: 30px;
+      width: 450px;
+    }
+
+    @include respond-to(tablet) {
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    @include respond-to(desktop) {
+      display: inline-flex;
+      width: 270px;
+    }
   }
 
   &__icon {
-    width: 70px;
-    height: 70px;
-    margin: 25px 100px;
+    @include respond-to(mobile) {
+      width: 70px;
+      height: 70px;
+      margin: 25px 190px;
+    }
+
+    @include respond-to(tablet) {
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    @include respond-to(desktop) {
+      margin: 25px 100px;
+    }
   }
 }

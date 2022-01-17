@@ -11,9 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
 
@@ -22,13 +26,17 @@
     <header class="header">
       <div class="container">
         <!-- Навигация по сайту -->
-        <a href="./index.html" class="logo" lang="en"> 
+        <a href="./index.html" class="logo" lang="en">
           <span class="logo__accent">Web</span>Studio
         </a>
         <nav>
           <ul class="site-nav">
-            <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a></li>
-            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+            </li>
             <li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>
           </ul>
         </nav>
@@ -118,7 +126,7 @@
       </section>
 
       <!-- Секция 'Чем мы занимаемся' -->
-      <section class="section">
+      <section class="section section--hide">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="our-work">
@@ -151,7 +159,12 @@
           <ul class="our-team">
             <li class="our-team__item">
               <article class="workers">
-                <img class="workers__photo" src="images/team1.jpg" alt="Product Designer" width="270" />
+                <img
+                  class="workers__photo"
+                  src="images/team1.jpg"
+                  alt="Product Designer"
+                  width="270"
+                />
                 <h3 class="workers__title">Игорь Демьяненко</h3>
                 <p class="workers__text" lang="en">Product Designer</p>
                 <ul class="colladge">
@@ -185,10 +198,15 @@
                   </li>
                 </ul>
               </article>
-            </li>             
+            </li>
             <li class="our-team__item">
               <article class="workers">
-                <img class="workers__photo" src="images/team2.jpg" alt="Frontend Developer" width="270" />
+                <img
+                  class="workers__photo"
+                  src="images/team2.jpg"
+                  alt="Frontend Developer"
+                  width="270"
+                />
                 <h3 class="workers__title">Ольга Репина</h3>
                 <p class="workers__text" lang="en">Frontend Developer</p>
                 <ul class="colladge">
@@ -368,10 +386,13 @@
                 >
               </li>
               <li class="address__item">
-                <a href="mailto:info@devstudio.com" class="address__link--opacity">info@devstudio.com</a>
+                <a href="mailto:info@devstudio.com" class="address__link--opacity"
+                  >info@devstudio.com</a
+                >
               </li>
               <li class="address__item">
-                <a href="tel:+380961111111" class="address__link--opacity">+38 096 111 11 11</a></li>
+                <a href="tel:+380961111111" class="address__link--opacity">+38 096 111 11 11</a>
+              </li>
             </ul>
           </address>
         </div>
@@ -463,14 +484,23 @@
           </label>
 
           <label class="comment-field">
-            <span class="comment-field__text">Комментарий</span> 
-            <textarea class="comment-field__comment" name="comment" id="comment" rows="6" placeholder="Введите текст"></textarea>
+            <span class="comment-field__text">Комментарий</span>
+            <textarea
+              class="comment-field__comment"
+              name="comment"
+              id="comment"
+              rows="6"
+              placeholder="Введите текст"
+            ></textarea>
           </label>
 
           <label class="agree">
             <input class="agree__input" type="checkbox" name="agree" />
             <span class="agree__icon"></span>
-            <span class="agree__text">Соглашаюсь с рассылкой и принимаю <a href="#" class="agree__link">Условия договора</a></span>
+            <span class="agree__text"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="#" class="agree__link">Условия договора</a></span
+            >
           </label>
 
           <button type="submit" class="button form__button">Отправить</button>
