@@ -19,6 +19,7 @@
 
   @include respond-to(desktop) {
     flex-direction: row;
+    justify-content: center;
 
     &__item:not(:last-child) {
       margin-right: 30px;
@@ -35,6 +36,7 @@
     }
 
     @include respond-to(desktop) {
+      min-width: 170px;
     }
 
     display: block;

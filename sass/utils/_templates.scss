@@ -69,8 +69,17 @@
     margin-bottom: 94px;
   }
 
-  &--accent {
+  &--team {
     background-color: $primary-button-bg-color;
+    @include respond-to(desktop) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--clients {
+    @include respond-to(desktop) {
+      margin-bottom: 0;
+    }
   }
 
   &__title {
@@ -103,6 +112,7 @@
 
       @include respond-to(desktop) {
         padding-top: 94px;
+        margin-bottom: 50px;
       }
     }
   }

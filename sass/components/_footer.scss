@@ -2,7 +2,17 @@
   background-color: $secondary-bg-color;
 
   & .container {
-    display: flex;
-    justify-content: center;
+    @include respond-to(mobile) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @include respond-to(tablet) {
+    }
+
+    @include respond-to(desktop) {
+      flex-direction: row;
+    }
   }
 }
