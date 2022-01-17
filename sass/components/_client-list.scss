@@ -1,12 +1,42 @@
 .client-list {
-  display: flex;
-  justify-content: center;
+  @include respond-to(mobile) {
+    display: flex;
+    flex-wrap: wrap;
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
+    justify-content: space-between;
+
+    &__item {
+      margin-bottom: 30px;
+    }
+
+    &__item:nth-last-child(-n + 2) {
+      margin-bottom: 60px;
+    }
+  }
+
+  @include respond-to(tablet) {
+  }
+
+  @include respond-to(desktop) {
+    flex-direction: row;
+
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 
   &__link {
+    @include respond-to(mobile) {
+      position: relative;
+      min-width: 210px;
+    }
+
+    @include respond-to(tablet) {
+    }
+
+    @include respond-to(desktop) {
+    }
+
     display: block;
     width: 170px;
     height: 92px;
@@ -43,39 +73,75 @@
     transition: fill $animation-style;
 
     &--corp1 {
+      content: '';
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
       width: 41px;
       height: 46.7px;
-      margin: 23px 65px;
     }
 
     &--corp2 {
+      content: '';
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
       width: 40px;
       height: 52px;
-      margin: 20px 65px;
     }
 
     &--corp3 {
+      content: '';
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
       width: 43px;
       height: 41px;
-      margin: 25px 63px;
     }
 
     &--corp4 {
+      content: '';
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
       width: 84px;
       height: 40px;
-      margin: 25px 43px;
     }
 
     &--corp5 {
+      content: '';
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
       width: 62px;
       height: 45px;
-      margin: 23px 54px;
     }
 
     &--corp6 {
+      content: '';
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
       width: 94px;
       height: 44px;
-      margin: 24px 38px;
     }
   }
 }
