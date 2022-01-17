@@ -1,19 +1,45 @@
 .our-team {
-  display: flex;
-  padding-bottom: 94px;
-  color: $primary-text-color;
+  @include respond-to(mobile) {
+    font-size: 16px;
+    line-height: 19px;
 
-  font-size: 16px;
-  line-height: 19px;
+    display: flex;
+    flex-direction: column;
+    color: $primary-text-color;
+
+    padding-bottom: 60px;
+  }
+
+  @include respond-to(tablet) {
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  @include respond-to(desktop) {
+    flex-direction: row;
+    padding-bottom: 94px;
+  }
 
   &__item {
-    background: $primary-white-color;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+    @include respond-to(mobile) {
+      background: $primary-white-color;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
 
-    &:not(:last-child) {
-      margin-right: 30px;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @include respond-to(tablet) {
+    }
+
+    @include respond-to(desktop) {
+      &:not(:last-child) {
+        margin-right: 30px;
+        margin-bottom: 0;
+      }
     }
   }
 }

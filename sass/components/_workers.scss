@@ -11,8 +11,19 @@
   }
 
   &__photo {
-    display: block;
-    margin-bottom: 30px;
+    @include respond-to(mobile) {
+      max-width: 450px;
+      display: block;
+      margin-bottom: 30px;
+    }
+
+    @include respond-to(tablet) {
+      max-width: 354px;
+    }
+
+    @include respond-to(desktop) {
+      max-width: 270px;
+    }
   }
 
   &__text {

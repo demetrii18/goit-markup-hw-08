@@ -1,4 +1,15 @@
 .logo {
+  @include respond-to(mobile) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+
+  @include respond-to(tablet) {
+  }
+
+  @include respond-to(desktop) {
+  }
+
   &__accent {
     color: $accent-color;
   }

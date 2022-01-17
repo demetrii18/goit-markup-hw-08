@@ -18,6 +18,13 @@
   &__item {
     @include respond-to(mobile) {
       display: flex;
+      flex-direction: column;
+
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 60px;
+      }
     }
 
     @include respond-to(tablet) {
@@ -26,10 +33,15 @@
     }
 
     @include respond-to(desktop) {
-      min-width: 270px;
+      max-width: 270px;
+      margin-bottom: 0;
 
       &:not(:last-child) {
         margin-right: 30px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
       }
     }
   }
@@ -41,6 +53,7 @@
     line-height: 1.14;
     font-weight: 700;
     text-transform: uppercase;
+    text-align: center;
 
     margin-bottom: 10px;
   }
@@ -49,20 +62,20 @@
     @include respond-to(mobile) {
       display: flex;
       flex-direction: column;
+      align-items: center;
       background: $primary-button-bg-color;
       border-radius: 4px;
       margin-bottom: 30px;
-      width: 450px;
+      max-width: 450px;
     }
 
     @include respond-to(tablet) {
-      align-items: center;
       justify-content: flex-start;
     }
 
     @include respond-to(desktop) {
       display: inline-flex;
-      width: 270px;
+      max-width: 270px;
     }
   }
 
@@ -74,8 +87,6 @@
     }
 
     @include respond-to(tablet) {
-      align-items: center;
-      justify-content: flex-start;
     }
 
     @include respond-to(desktop) {
