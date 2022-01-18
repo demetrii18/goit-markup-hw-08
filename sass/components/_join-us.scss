@@ -1,5 +1,15 @@
 .join-us {
-  padding: 72px 0 100px 78px;
+  @include respond-to(mobile) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 60px;
+  }
+
+  @include respond-to(desktop) {
+    padding: 72px 0 100px 78px;
+  }
 
   &__title {
     font-weight: 700;

@@ -1,4 +1,18 @@
 .subscribe {
+  @include respond-to(mobile) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  @include respond-to(tablet) {
+  }
+
+  @include respond-to(desktop) {
+    display: inline-flex;
+  }
+
   display: flex;
   flex-direction: column;
 
@@ -16,7 +30,21 @@
   }
 
   &__field {
-    display: inline-flex;
+    @include respond-to(mobile) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 60px;
+      min-width: 100%;
+    }
+
+    @include respond-to(tablet) {
+    }
+
+    @include respond-to(desktop) {
+      display: inline-flex;
+      flex-direction: row;
+    }
 
     &::placeholder {
       font-size: 16px;
@@ -29,12 +57,33 @@
     }
   }
 
-  &__label + &__button {
-    margin-left: 12px;
+  &__label {
+    @include respond-to(mobile) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__button {
+    @include respond-to(mobile) {
+      margin: auto;
+    }
+
+    @include respond-to(desktop) {
+      &__label + &__button {
+        margin-left: 12px;
+      }
+    }
   }
 
   &__input {
-    width: 358px;
+    @include respond-to(mobile) {
+      min-width: 450px;
+    }
+
+    @include respond-to(desktop) {
+      min-width: 358px;
+    }
+
     height: 50px;
     padding-top: 15px;
     padding-bottom: 15px;
