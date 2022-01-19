@@ -11,6 +11,9 @@
 
   @include respond-to(desktop) {
     display: inline-flex;
+    padding-top: 72px;
+    margin-left: 93px;
+    align-items: flex-start;
   }
 
   display: flex;
@@ -60,6 +63,11 @@
   &__label {
     @include respond-to(mobile) {
       margin-bottom: 20px;
+    }
+
+    @include respond-to(desktop) {
+      margin-bottom: 0;
+      margin-right: 12px;
     }
   }
 

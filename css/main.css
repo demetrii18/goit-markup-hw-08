@@ -1066,6 +1066,11 @@ ul {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    padding-top: 72px;
+    margin-left: 93px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -1147,6 +1152,13 @@ ul {
 @media screen and (min-width: 480px) {
   .subscribe__label {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__label {
+    margin-bottom: 0;
+    margin-right: 12px;
   }
 }
 
