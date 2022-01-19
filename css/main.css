@@ -428,6 +428,8 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .features {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     width: calc((100% - 90px) / 4);
     color: #757575;
   }
