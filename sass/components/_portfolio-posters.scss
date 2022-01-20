@@ -5,15 +5,25 @@
   color: $primary-text-color;
   background: $primary-white-color;
 
-  display: inline-flex;
-  flex-direction: column;
-  width: 370px;
-
   &:hover .poster::before,
   &:hover .poster__text,
   &:focus .poster::before,
   &:focus .poster__text {
     transform: translateY(0);
+  }
+
+  @include respond-to(mobile) {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+  }
+
+  @include respond-to(tablet) {
+    max-width: 354px;
+  }
+
+  @include respond-to(desktop) {
+    max-width: 370px;
   }
 }
 
@@ -22,6 +32,18 @@
   overflow: hidden;
 
   display: inline-flex;
+
+  @include respond-to(mobile) {
+    max-width: 450px;
+  }
+
+  @include respond-to(tablet) {
+    max-width: 354px;
+  }
+
+  @include respond-to(desktop) {
+    max-width: 370px;
+  }
 
   &::before {
     content: '';
@@ -46,7 +68,6 @@
     top: 0;
     left: 0;
 
-    padding: 63px 24px;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
@@ -55,5 +76,17 @@
 
     transform: translateY(100%);
     transition: transform $animation-style;
+
+    @include respond-to(mobile) {
+      padding: 77px 24px;
+    }
+
+    @include respond-to(tablet) {
+      padding: 49px 24px;
+    }
+
+    @include respond-to(desktop) {
+      padding: 63px 24px;
+    }
   }
 }
