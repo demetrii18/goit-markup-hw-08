@@ -7,11 +7,13 @@
   }
 
   @include respond-to(tablet) {
+    padding-left: 151px;
   }
 
   @include respond-to(desktop) {
     display: inline-flex;
     padding-top: 72px;
+    padding-left: 0;
     margin-left: 93px;
     align-items: flex-start;
   }

@@ -4,8 +4,14 @@
     flex-direction: column;
     align-items: center;
   }
+
+  @include respond-to(tablet) {
+    padding-left: 61px;
+  }
+
   @include respond-to(desktop) {
     display: inline-block;
+    padding-left: 0;
   }
 }
 

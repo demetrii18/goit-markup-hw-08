@@ -7,6 +7,12 @@
     margin-bottom: 60px;
   }
 
+  @include respond-to(tablet) {
+    padding-top: 65px;
+    padding-right: 74px;
+    margin-bottom: 0;
+  }
+
   @include respond-to(desktop) {
     padding: 72px 0 100px 78px;
   }

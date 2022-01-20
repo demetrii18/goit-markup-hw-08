@@ -11,12 +11,13 @@
   }
 
   @include respond-to(tablet) {
-    align-items: center;
-    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   @include respond-to(desktop) {
-    flex-direction: row;
+    flex-wrap: nowrap;
     padding-bottom: 94px;
   }
 
@@ -33,6 +34,13 @@
     }
 
     @include respond-to(tablet) {
+      &:not(:last-child) {
+        margin-bottom: 0px;
+      }
+
+      &:nth-child(-n + 2) {
+        margin-bottom: 30px;
+      }
     }
 
     @include respond-to(desktop) {

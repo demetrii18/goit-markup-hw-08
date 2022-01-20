@@ -1,8 +1,4 @@
 .contact-nav {
-  &__item:last-child {
-    margin-left: 50px;
-  }
-
   &__link {
     display: inline-flex;
     align-items: center;
@@ -55,11 +51,29 @@
   @include respond-to(tablet) {
     display: flex;
     flex-direction: column;
+
+    &__item:last-child {
+      margin-left: 0;
+    }
+
+    margin-left: auto;
+
+    &__item + &__item {
+      margin-top: 10px;
+    }
   }
 
   @include respond-to(desktop) {
     flex-direction: row;
     margin-left: auto;
     align-items: center;
+
+    &__item:last-child {
+      margin-left: 50px;
+    }
+
+    &__item + &__item {
+      margin-top: 0;
+    }
   }
 }

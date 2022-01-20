@@ -9,6 +9,12 @@
     }
 
     @include respond-to(tablet) {
+      flex-direction: row;
+
+      &:last-child {
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
     }
 
     @include respond-to(desktop) {
