@@ -1,11 +1,32 @@
 .filter {
-  display: flex;
-  justify-content: center;
-  padding-top: 94px;
-  margin-bottom: 50px;
+  @include respond-to(mobile) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 60px;
+    margin-bottom: 40px;
 
-  &__item:not(:last-child) {
-    margin-right: 8px;
+    &__item:not(:last-child) {
+      margin-right: 8px;
+    }
+
+    &__item:nth-child(-n + 3) {
+      margin-bottom: 15px;
+    }
+  }
+
+  @include respond-to(tablet) {
+    justify-content: center;
+    margin-bottom: 30px;
+
+    &__item:nth-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
+
+  @include respond-to(desktop) {
+    padding-top: 94px;
+    margin-bottom: 50px;
   }
 
   &__button {
