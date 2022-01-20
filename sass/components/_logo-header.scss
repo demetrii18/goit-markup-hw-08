@@ -14,3 +14,13 @@
     color: $accent-color;
   }
 }
+
+.logo__head {
+  @include respond-to(mobile) {
+    padding-top: 16px;
+  }
+
+  @include respond-to(tablet) {
+    padding-top: 0;
+  }
+}

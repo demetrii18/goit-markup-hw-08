@@ -175,6 +175,10 @@ ul {
   border-bottom: 1px solid #ececec;
 }
 
+.header .container {
+  position: relative;
+}
+
 @media screen and (min-width: 480px) {
   .header .container {
     display: -webkit-box;
@@ -195,6 +199,30 @@ ul {
 }
 
 @media screen and (min-width: 480px) {
+  .menu__icon {
+    width: 40px;
+    height: 40px;
+    fill: #000;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu__icon {
+    display: none;
+  }
+}
+
+.menu__icon--close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
   .logo {
     font-size: 24px;
     line-height: 1.16;
@@ -203,6 +231,18 @@ ul {
 
 .logo__accent {
   color: #2196f3;
+}
+
+@media screen and (min-width: 480px) {
+  .logo__head {
+    padding-top: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo__head {
+    padding-top: 0;
+  }
 }
 
 @media screen and (min-width: 480px) {
