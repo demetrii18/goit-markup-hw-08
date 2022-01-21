@@ -16,30 +16,3 @@
     }
   }
 }
-
-.menu__button {
-  @include respond-to(mobile) {
-    display: inline-flex;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: auto;
-    border: none;
-    background: transparent;
-  }
-
-  @include respond-to(tablet) {
-    display: none;
-  }
-}
-
-.menu__button .menu__icon-close {
-  display: none;
-}
-
-.menu__button.is-open .menu__icon-close {
-  display: block;
-}
-
-.menu__button.is-open .menu__icon-burger {
-  display: none;
-}

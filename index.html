@@ -58,7 +58,7 @@
             </a>
           </li>
         </ul>
-        <button type="button" class="menu__button" data-menu-button>
+        <button type="button" class="menu__button" aria-expanded="false" data-menu-button>
           <svg width="40" height="40" aria-label="Переключатель мобильного меню">
             <use class="menu__icon-burger" href="./images/burger.svg#burger"></use>
             <use class="menu__icon-close" href="./images/close-menu.svg#close-menu"></use>
@@ -70,7 +70,7 @@
     <!-- Раздел с уникальным контентом -->
     <main>
       <!-- Меню для мобилки -->
-      <section class="menu">
+      <section class="menu" data-menu>
         <div class="menu__container">
           <ul class="menu-nav">
             <li class="menu-nav__item">
@@ -85,29 +85,30 @@
           </ul>
           <ul class="menu-contact">
             <li class="menu-contact__item">
-              <a href="mailto:info@devstudio.com" class="menu-contact__link">
-                info@devstudio.com</a>
+              <a href="tel:+380961111111" class="menu-contact__tel">
+                +38 096 111 11 11
+              </a>       
             </li>
             <li class="menu-contact__item">
-              <a href="tel:+380961111111" class="menu-contact__link">
-                +38 096 111 11 11
+              <a href="mailto:info@devstudio.com" class="menu-contact__mail">
+                info@devstudio.com
               </a>
             </li>
           </ul>
           <ul class="menu-social">
             <li class="menu-social__item">
               <a href="https://www.instagram.com/" class="menu-social__link">
-                instagram
+                instagram<span class="menu-social__decor">|</span>
               </a>
             </li>
             <li class="menu-social__item">
               <a href="https://twitter.com/" class="menu-social__link">
-                twitter
+                twitter<span class="menu-social__decor">|</span>
               </a>
             </li>
             <li class="menu-social__item">
               <a href="https://facebook.com/" class="menu-social__link">
-                facebook
+                facebook<span class="menu-social__decor">|</span>
               </a>
             </li>
             <li class="menu-social__item">
