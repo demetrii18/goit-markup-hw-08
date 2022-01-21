@@ -58,17 +58,67 @@
             </a>
           </li>
         </ul>
-        <svg class="menu__icon">
-          <use href="./images/burger.svg#burger"></use>
-        </svg>
-        <svg class="menu__icon menu__icon--close">
-          <use href="./images/close-menu.svg#close-menu"></use>
-        </svg>
+        <button type="button" class="menu__button" data-menu-button>
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="menu__icon-burger" href="./images/burger.svg#burger"></use>
+            <use class="menu__icon-close" href="./images/close-menu.svg#close-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <!-- Раздел с уникальным контентом -->
     <main>
+      <!-- Меню для мобилки -->
+      <section class="menu">
+        <div class="menu__container">
+          <ul class="menu-nav">
+            <li class="menu-nav__item">
+              <a href="./index.html" class="menu-nav__link">Студия</a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="./portfolio.html" class="menu-nav__link">Портфолио</a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="./index.html" class="menu-nav__link">Контакты</a>
+            </li>
+          </ul>
+          <ul class="menu-contact">
+            <li class="menu-contact__item">
+              <a href="mailto:info@devstudio.com" class="menu-contact__link">
+                info@devstudio.com</a>
+            </li>
+            <li class="menu-contact__item">
+              <a href="tel:+380961111111" class="menu-contact__link">
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+          <ul class="menu-social">
+            <li class="menu-social__item">
+              <a href="https://www.instagram.com/" class="menu-social__link">
+                instagram
+              </a>
+            </li>
+            <li class="menu-social__item">
+              <a href="https://twitter.com/" class="menu-social__link">
+                twitter
+              </a>
+            </li>
+            <li class="menu-social__item">
+              <a href="https://facebook.com/" class="menu-social__link">
+                facebook
+              </a>
+            </li>
+            <li class="menu-social__item">
+              <a href="https://linkedin.com/" class="menu-social__link">
+                linkedin
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <!-- Блок герой -->
       <section class="hero">
         <h1 class="hero__title">
@@ -504,5 +554,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
