@@ -31,10 +31,11 @@
   position: relative;
   overflow: hidden;
 
-  display: inline-flex;
+  display: block;
 
   @include respond-to(mobile) {
     max-width: 450px;
+    height: 294px;
   }
 
   @include respond-to(tablet) {

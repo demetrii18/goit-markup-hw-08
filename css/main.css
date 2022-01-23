@@ -1673,14 +1673,13 @@ ul {
 .poster {
   position: relative;
   overflow: hidden;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: block;
 }
 
 @media screen and (min-width: 50px) {
   .poster {
     max-width: 450px;
+    height: 294px;
   }
 }
 
