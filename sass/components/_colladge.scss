@@ -1,7 +1,14 @@
 .colladge {
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
+
+  @include respond-to(mobile) {
+    padding-bottom: 24px;
+  }
+
+  @include respond-to(desktop) {
+    padding-bottom: 30px;
+  }
 
   &__link {
     display: inline-flex;

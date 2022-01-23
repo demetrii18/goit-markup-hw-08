@@ -15,10 +15,25 @@
 
     margin-bottom: 2px;
     padding-left: 24px;
+    padding-right: 24px;
   }
 
   &__text {
     padding-bottom: 20px;
     padding-left: 24px;
+
+    &--first {
+      @include respond-to(mobile) {
+        padding-bottom: 20px;
+      }
+
+      @include respond-to(tablet) {
+        padding-bottom: 56px;
+      }
+
+      @include respond-to(desktop) {
+        padding-bottom: 20px;
+      }
+    }
   }
 }

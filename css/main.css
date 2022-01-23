@@ -854,7 +854,18 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 50px) {
+  .colladge {
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .colladge {
+    padding-bottom: 30px;
+  }
 }
 
 .colladge__link {
@@ -1765,11 +1776,30 @@ ul {
   letter-spacing: 0.06em;
   margin-bottom: 2px;
   padding-left: 24px;
+  padding-right: 24px;
 }
 
 .content__text {
   padding-bottom: 20px;
   padding-left: 24px;
+}
+
+@media screen and (min-width: 50px) {
+  .content__text--first {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content__text--first {
+    padding-bottom: 56px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .content__text--first {
+    padding-bottom: 20px;
+  }
 }
 
 .backdrop {
