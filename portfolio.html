@@ -192,11 +192,38 @@
                       используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                       конкурентов.
                     </p>
-                    <img
-                      class="poster__img"
-                      src="images/poster2.jpg"
-                      alt="Постер New Orlean vs Golden Star"
-                    />
+                    <picture>
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          ../images/mobile_jpg_optim/banner2-480.jpg    450w,
+                          ../images/mobile_jpg_optim/banner2-480_x2.jpg 900w
+                        "
+                        sizes="450px"
+                      />
+                      <source
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        srcset="
+                          ../images/tablet_jpg_optim/banner2-768.jpg    354w,
+                          ../images/tablet_jpg_optim/banner2-768_x2.jpg 708w
+                        "
+                        sizes="354px"
+                      />
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ../images/desktop_jpg_optim/banner2-1200.jpg    370w,
+                          ../images/desktop_jpg_optim/banner2-1200_x2.jpg 740w
+                        "
+                        sizes="370px"
+                      />
+                      <img
+                        class="poster__img"
+                        src="images/poster2.jpg"
+                        alt="Постер New Orlean vs Golden Star"
+                        min-width="370"
+                      />
+                    </picture>
                   </div>
                   <div class="content">
                     <h2 class="content__title">
@@ -216,7 +243,38 @@
                       используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                       конкурентов.
                     </p>
-                    <img src="images/poster3.jpg" alt="Ресторан Seafood" width="370" />
+                    <picture>
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          ../images/mobile_jpg_optim/banner3-480.jpg    450w,
+                          ../images/mobile_jpg_optim/banner3-480_x2.jpg 900w
+                        "
+                        sizes="450px"
+                      />
+                      <source
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        srcset="
+                          ../images/tablet_jpg_optim/banner3-768.jpg    354w,
+                          ../images/tablet_jpg_optim/banner3-768_x2.jpg 708w
+                        "
+                        sizes="354px"
+                      />
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ../images/desktop_jpg_optim/banner3-1200.jpg    370w,
+                          ../images/desktop_jpg_optim/banner3-1200_x2.jpg 740w
+                        "
+                        sizes="370px"
+                      />
+                      <img
+                        class="poster__img"
+                        src="images/poster3.jpg"
+                        alt="Ресторан Seafood"
+                        min-width="370"
+                      />
+                    </picture>
                   </div>
                   <div class="content">
                     <h2 class="content__title">Ресторан <span lang="en">Seafood</span></h2>
@@ -234,6 +292,7 @@
                       используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                       конкурентов.
                     </p>
+
                     <img src="images/poster4.jpg" alt="Проект Prime" width="370" />
                   </div>
                   <div class="content">
