@@ -5,7 +5,16 @@
   margin-bottom: 30px;
 
   &__text {
-    line-height: 1.71;
+    @include respond-to(mobile) {
+      font-size: 12px;
+      line-height: 1.17;
+    }
+
+    @include respond-to(desktop) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+
     color: $primary-text-color;
   }
 

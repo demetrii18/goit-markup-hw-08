@@ -9,6 +9,10 @@ body {
   letter-spacing: $main-ls;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
