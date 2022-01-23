@@ -9,6 +9,8 @@
   height: 100%;
   background: $primary-white-color;
 
+  z-index: 49;
+
   &.is-open {
     display: block;
   }
