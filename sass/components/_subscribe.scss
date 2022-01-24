@@ -92,7 +92,8 @@
       width: 100%;
     }
 
-    @include respond-to(desktop) {
+    @include respond-to(tablet) {
+      width: 450px;
     }
 
     @include respond-to(desktop) {

@@ -1505,6 +1505,12 @@ ul {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe__input {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .subscribe__input {
     width: 358px;
