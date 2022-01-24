@@ -83,36 +83,38 @@
               <a href="./index.html" class="menu-nav__link">Контакты</a>
             </li>
           </ul>
-          <ul class="menu-contact">
-            <li class="menu-contact__item">
-              <a href="tel:+380961111111" class="menu-contact__tel"> +38 096 111 11 11 </a>
-            </li>
-            <li class="menu-contact__item">
-              <a href="mailto:info@devstudio.com" class="menu-contact__mail">
-                info@devstudio.com
-              </a>
-            </li>
-          </ul>
-          <ul class="menu-social">
-            <li class="menu-social__item">
-              <a href="https://www.instagram.com/" class="menu-social__link">
-                instagram<span class="menu-social__decor">|</span>
-              </a>
-            </li>
-            <li class="menu-social__item">
-              <a href="https://twitter.com/" class="menu-social__link">
-                twitter<span class="menu-social__decor">|</span>
-              </a>
-            </li>
-            <li class="menu-social__item">
-              <a href="https://facebook.com/" class="menu-social__link">
-                facebook<span class="menu-social__decor">|</span>
-              </a>
-            </li>
-            <li class="menu-social__item">
-              <a href="https://linkedin.com/" class="menu-social__link"> linkedin </a>
-            </li>
-          </ul>
+          <div class="menu__position">
+            <ul class="menu-contact">
+              <li class="menu-contact__item">
+                <a href="tel:+380961111111" class="menu-contact__tel"> +38 096 111 11 11 </a>
+              </li>
+              <li class="menu-contact__item">
+                <a href="mailto:info@devstudio.com" class="menu-contact__mail">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="menu-social">
+              <li class="menu-social__item">
+                <a href="https://www.instagram.com/" class="menu-social__link">
+                  instagram<span class="menu-social__decor">|</span>
+                </a>
+              </li>
+              <li class="menu-social__item">
+                <a href="https://twitter.com/" class="menu-social__link">
+                  twitter<span class="menu-social__decor">|</span>
+                </a>
+              </li>
+              <li class="menu-social__item">
+                <a href="https://facebook.com/" class="menu-social__link">
+                  facebook<span class="menu-social__decor">|</span>
+                </a>
+              </li>
+              <li class="menu-social__item">
+                <a href="https://linkedin.com/" class="menu-social__link"> linkedin </a>
+              </li>
+            </ul>
+          </div>          
         </div>
       </section>
 
@@ -620,62 +622,64 @@
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="modal__button" data-modal-close>
-          <svg class="modal__close-icon">
-            <use href="./images/close.svg#close"></use>
-          </svg>
-        </button>
-
-        <form class="form js-speaker-form">
-          <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
-
-          <label class="form-field">
-            <span class="form-field__text">Имя</span>
-            <input class="form-field__input" type="text" name="name" />
-            <svg class="form-field__icon">
-              <use href="./images/icons.svg#person-icon"></use>
+      <div class="container">
+        <div class="modal">
+          <button type="button" class="modal__button" data-modal-close>
+            <svg class="modal__close-icon">
+              <use href="./images/close.svg#close"></use>
             </svg>
-          </label>
+          </button>
 
-          <label class="form-field">
-            <span class="form-field__text">Телефон</span>
-            <input class="form-field__input" type="tel" name="tel" />
-            <svg class="form-field__icon">
-              <use href="./images/icons.svg#phone-icon"></use>
-            </svg>
-          </label>
+          <form class="form js-speaker-form">
+            <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
 
-          <label class="form-field">
-            <span class="form-field__text">Почта</span>
-            <input class="form-field__input" type="email" name="email" />
-            <svg class="form-field__icon">
-              <use href="./images/icons.svg#email-icon"></use>
-            </svg>
-          </label>
+            <label class="form-field">
+              <span class="form-field__text">Имя</span>
+              <input class="form-field__input" type="text" name="name" />
+              <svg class="form-field__icon">
+                <use href="./images/icons.svg#person-icon"></use>
+              </svg>
+            </label>
 
-          <label class="comment-field">
-            <span class="comment-field__text">Комментарий</span>
-            <textarea
-              class="comment-field__comment"
-              name="comment"
-              id="comment"
-              rows="6"
-              placeholder="Введите текст"
-            ></textarea>
-          </label>
+            <label class="form-field">
+              <span class="form-field__text">Телефон</span>
+              <input class="form-field__input" type="tel" name="tel" />
+              <svg class="form-field__icon">
+                <use href="./images/icons.svg#phone-icon"></use>
+              </svg>
+            </label>
 
-          <label class="agree">
-            <input class="agree__input" type="checkbox" name="agree" />
-            <span class="agree__icon"></span>
-            <span class="agree__text"
-              >Соглашаюсь с рассылкой и принимаю
-              <a href="#" class="agree__link">Условия договора</a></span
-            >
-          </label>
+            <label class="form-field">
+              <span class="form-field__text">Почта</span>
+              <input class="form-field__input" type="email" name="email" />
+              <svg class="form-field__icon">
+                <use href="./images/icons.svg#email-icon"></use>
+              </svg>
+            </label>
 
-          <button type="submit" class="button form__button">Отправить</button>
-        </form>
+            <label class="comment-field">
+              <span class="comment-field__text">Комментарий</span>
+              <textarea
+                class="comment-field__comment"
+                name="comment"
+                id="comment"
+                rows="6"
+                placeholder="Введите текст"
+              ></textarea>
+            </label>
+
+            <label class="agree">
+              <input class="agree__input" type="checkbox" name="agree" />
+              <span class="agree__icon"></span>
+              <span class="agree__text"
+                >Соглашаюсь с рассылкой и принимаю
+                <a href="#" class="agree__link">Условия договора</a></span
+              >
+            </label>
+
+            <button type="submit" class="button form__button">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>

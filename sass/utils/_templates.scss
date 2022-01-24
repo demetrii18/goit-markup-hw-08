@@ -1,6 +1,6 @@
 .container {
   @include respond-to(mobile) {
-    width: 480px;
+    width: 100%;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -13,6 +13,10 @@
   @include respond-to(desktop) {
     width: 1200px;
   }
+
+  /* @media screen and (max-width: 480px) {
+    width: 100%;
+  } */
 }
 
 .button {

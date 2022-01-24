@@ -64,11 +64,13 @@
     @include respond-to(mobile) {
       display: flex;
       flex-direction: column;
-      align-items: center;
+
       background: $primary-button-bg-color;
       border-radius: 4px;
       margin-bottom: 30px;
-      max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
     }
 
     @include respond-to(tablet) {
@@ -85,7 +87,7 @@
     @include respond-to(mobile) {
       width: 70px;
       height: 70px;
-      margin: 25px 190px;
+      margin: 25px auto;
     }
 
     @include respond-to(tablet) {

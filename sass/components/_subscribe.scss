@@ -7,7 +7,8 @@
   }
 
   @include respond-to(tablet) {
-    padding-left: 151px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @include respond-to(desktop) {
@@ -40,7 +41,7 @@
       flex-direction: column;
       align-items: center;
       margin-bottom: 60px;
-      min-width: 100%;
+      width: 100%;
     }
 
     @include respond-to(tablet) {
@@ -64,6 +65,7 @@
 
   &__label {
     @include respond-to(mobile) {
+      width: 100%;
       margin-bottom: 20px;
     }
 
@@ -87,11 +89,14 @@
 
   &__input {
     @include respond-to(mobile) {
-      min-width: 450px;
+      width: 100%;
     }
 
     @include respond-to(desktop) {
-      min-width: 358px;
+    }
+
+    @include respond-to(desktop) {
+      width: 358px;
     }
 
     height: 50px;

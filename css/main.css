@@ -29,9 +29,15 @@ ul {
   list-style: none;
 }
 
+.container {
+  /* @media screen and (max-width: 480px) {
+    width: 100%;
+  } */
+}
+
 @media screen and (min-width: 50px) {
   .container {
-    width: 480px;
+    width: 100%;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -395,8 +401,29 @@ ul {
 }
 
 .menu__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
   padding-left: 40px;
   padding-right: 40px;
+}
+
+.menu__position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media screen and (min-width: 50px) {
@@ -432,8 +459,14 @@ ul {
 }
 
 .menu-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-top: 48px;
-  margin-bottom: 302px;
 }
 
 .menu-nav__item {
@@ -457,6 +490,13 @@ ul {
 }
 
 .menu-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 64px;
 }
 
@@ -673,13 +713,12 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     background: #f5f4fa;
     border-radius: 4px;
     margin-bottom: 30px;
-    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
 }
 
@@ -702,7 +741,7 @@ ul {
   .features__icon {
     width: 70px;
     height: 70px;
-    margin: 25px 190px;
+    margin: 25px auto;
   }
 }
 
@@ -758,6 +797,9 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     color: #757575;
     padding-bottom: 60px;
   }
@@ -824,7 +866,7 @@ ul {
 
 @media screen and (min-width: 50px) {
   .workers__photo {
-    max-width: 450px;
+    width: 100%;
     display: block;
     margin-bottom: 30px;
   }
@@ -910,12 +952,16 @@ ul {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .client-list__item {
+    margin-right: 30px;
     margin-bottom: 30px;
+  }
+  .client-list__item:nth-child(2n) {
+    margin-right: 0;
   }
   .client-list__item:nth-last-child(-n + 2) {
     margin-bottom: 60px;
@@ -930,6 +976,12 @@ ul {
   }
   .client-list__item {
     margin-right: 30px;
+  }
+  .client-list__item:nth-child(2n) {
+    margin-right: 30px;
+  }
+  .client-list__item:nth-child(3n) {
+    margin-right: 0;
   }
   .client-list__item:nth-last-child(3n + 1) {
     margin-right: 0;
@@ -1313,7 +1365,8 @@ ul {
 
 @media screen and (min-width: 768px) {
   .subscribe {
-    padding-left: 151px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1348,7 +1401,7 @@ ul {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 60px;
-    min-width: 100%;
+    width: 100%;
   }
 }
 
@@ -1408,6 +1461,7 @@ ul {
 
 @media screen and (min-width: 50px) {
   .subscribe__label {
+    width: 100%;
     margin-bottom: 20px;
   }
 }
@@ -1447,13 +1501,13 @@ ul {
 
 @media screen and (min-width: 50px) {
   .subscribe__input {
-    min-width: 450px;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .subscribe__input {
-    min-width: 358px;
+    width: 358px;
   }
 }
 
@@ -1825,6 +1879,15 @@ ul {
 
 @media screen and (min-width: 50px) {
   .modal {
+    position: relative;
+    width: 100%;
+    height: 609px;
+    margin-top: 93px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1832,6 +1895,8 @@ ul {
             transform: translate(-50%, -50%);
     width: 450px;
     height: 609px;
+    margin-left: 0;
+    margin-top: 0;
   }
 }
 

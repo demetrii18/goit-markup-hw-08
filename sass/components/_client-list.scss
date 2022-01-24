@@ -2,11 +2,15 @@
   @include respond-to(mobile) {
     display: flex;
     flex-wrap: wrap;
-
-    justify-content: space-between;
+    justify-content: center;
 
     &__item {
+      margin-right: 30px;
       margin-bottom: 30px;
+    }
+
+    &__item:nth-child(2n) {
+      margin-right: 0;
     }
 
     &__item:nth-last-child(-n + 2) {
@@ -19,6 +23,14 @@
 
     &__item {
       margin-right: 30px;
+    }
+
+    &__item:nth-child(2n) {
+      margin-right: 30px;
+    }
+
+    &__item:nth-child(3n) {
+      margin-right: 0;
     }
 
     &__item:nth-last-child(3n + 1) {

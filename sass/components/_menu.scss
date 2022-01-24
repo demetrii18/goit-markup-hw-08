@@ -21,8 +21,17 @@
 }
 
 .menu__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   padding-left: 40px;
   padding-right: 40px;
+}
+
+.menu__position {
+  display: flex;
+  flex-direction: column;
 }
 
 .menu__button {
@@ -55,8 +64,9 @@
 }
 
 .menu-nav {
+  display: flex;
+  flex-direction: column;
   padding-top: 48px;
-  margin-bottom: 302px;
 }
 
 .menu-nav__item {
@@ -82,6 +92,8 @@
 }
 
 .menu-contact {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 64px;
 }
 
